@@ -1,0 +1,231 @@
+﻿/*
+*   Author: beshleyua
+*   Author URL: http://themeforest.net/user/beshleyua
+*/
+
+/* TABLE OF CONTENTS
+	1. Template Orange
+*/
+
+/* 1. Template Orange */
+@active-color: rgba(255, 152, 0, 1);
+@extra-active-color: rgba(255, 152, 0, 0.4);
+@extra2-active-color: rgba(255, 152, 0, 0.01);
+
+
+.background {
+	background-color: @extra-active-color;
+}
+
+.preloader {
+	.spinner {
+		.double-bounce1, .double-bounce2 {
+			background: @active-color;
+		}
+	}
+}
+
+.lnk, .button {
+	&:hover {
+		color: @active-color;
+		.ion {
+			color: @active-color;
+		}
+		.arrow {
+			&:before, &:after {
+				background: @active-color;
+			}
+		}
+	}
+}
+
+input,
+textarea,
+button {
+	&:focus {
+		border-bottom: 1px solid @active-color;
+	}
+}
+
+button {
+	&:hover {
+		border-bottom: 1px solid @active-color;
+	}
+}
+
+.header {
+	.top-menu {
+		ul {
+			li {
+				&:hover, &.active {
+					a {
+						color: @active-color;
+						.icon, .link {
+							color: @active-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.card-started {
+	&:after {
+		background: -moz-linear-gradient(-45deg, @extra-active-color 0%, @extra2-active-color 100%);
+		background: -webkit-linear-gradient(-45deg, @extra-active-color 0%,@extra2-active-color 100%);
+		background: linear-gradient(135deg, @extra-active-color 0%,@extra2-active-color 100%);
+	}
+	.profile {
+		.image {
+			&:before {
+				background: -moz-linear-gradient(-45deg, @extra-active-color 0%, @extra2-active-color 100%);
+				background: -webkit-linear-gradient(-45deg, @extra-active-color 0%,@extra2-active-color 100%);
+				background: linear-gradient(135deg, @extra-active-color 0%,@extra2-active-color 100%);
+			}
+		}
+		.subtitle {
+			color: @active-color;
+		}
+		.social {
+			a {
+				&:hover {
+					.ion, .fab, .fas {
+						color: @active-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.content {
+	.title {
+		&:before {
+			background: -moz-linear-gradient(-45deg, @extra-active-color 0%, @extra2-active-color 100%);
+			background: -webkit-linear-gradient(-45deg, @extra-active-color 0%,@extra2-active-color 100%);
+			background: linear-gradient(135deg, @extra-active-color 0%,@extra2-active-color 100%);
+		}
+	}
+}
+
+.service-items {
+	.service-item {
+		.icon {
+			color: @active-color;
+			background: -moz-linear-gradient(-45deg, @extra-active-color 0%, @extra2-active-color 100%);
+			background: -webkit-linear-gradient(-45deg, @extra-active-color 0%,@extra2-active-color 100%);
+			background: linear-gradient(135deg, @extra-active-color 0%,@extra2-active-color 100%);
+		}
+	}
+}
+
+.pricing-items {
+	.pricing-item {
+		.icon {
+			color: @active-color;
+		}
+		.feature-list {
+			ul {
+				li {
+					strong {
+						background: @extra-active-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fuct-items {
+	.fuct-item {
+		.icon {
+			color: @active-color;
+		}
+	}
+}
+
+.resume-title, .skill-title {
+	.icon {
+		color: @active-color;
+	}
+}
+
+.resume-items {
+	.resume-item {
+		&.active {
+			.date {
+				color: @active-color;
+				&:before {
+					background: @active-color;
+				}
+			}
+		}
+	}
+}
+
+.skills-list {
+	ul {
+		li {
+			.progress {
+				.percentage {
+					background: @active-color;
+				}
+			}
+		}
+	}
+}
+
+.content.works {
+	.filter-menu {
+		.f_btn {
+			&.active {
+				color: @active-color;
+			}
+		}
+	}
+}
+
+.box-item {
+	.image {
+		.info {
+			&:before {
+				background: -moz-linear-gradient(-45deg, @extra-active-color 0%, @extra2-active-color 100%);
+				background: -webkit-linear-gradient(-45deg, @extra-active-color 0%,@extra2-active-color 100%);
+				background: linear-gradient(135deg, @extra-active-color 0%,@extra2-active-color 100%);
+			}
+		}
+	}
+}
+
+.post-box {
+	.blog-content {
+		blockquote {
+			border-left: 2px solid @active-color;
+		}
+		ul.list-style {
+			li {
+				&:before {
+					background: @active-color;
+				}
+			}
+		}
+	}
+	.post-comments {
+		li {
+			.comment-info {
+				.name {
+					h6 {
+						color: @active-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.background.gradient {
+	background: #50a3a2;
+	background: -webkit-linear-gradient(top left, #d76d77 0%, #ff9800 100%);
+	background: linear-gradient(to bottom right, #d76d77 0%, #ff9800 100%);
+}

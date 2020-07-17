@@ -1,0 +1,378 @@
+﻿/*
+*   Author: beshleyua
+*   Author URL: http://themeforest.net/user/beshleyua
+*/
+
+/* TABLE OF CONTENTS
+	1. Template Dark
+*/
+
+/* 1. Template Dark */
+
+@white-color: rgba(255,255,255,0.85);
+@white-extra-color: rgba(255,255,255,0.55);
+@dark-bg-color: #26262d;
+@dark-bg2-color: #31313a;
+
+body {
+	color: @white-extra-color;
+	background: @dark-bg-color;
+}
+
+.background {
+	background-color: @dark-bg-color;
+}
+
+.border-line-v {
+	&:before {
+		background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+		background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		background: radial-gradient(ellipse at top, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+	}
+}
+
+.border-line-h {
+	&:after {
+		background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+		background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		background: radial-gradient(ellipse at left, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: @white-color;
+}
+
+.lnks {
+	&:before {
+		background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+		background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		background: radial-gradient(ellipse at left, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+	}
+}
+
+.lnk, .button {
+	color: @white-color;
+	&:before {
+		background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+		background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		background: radial-gradient(ellipse at top, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+	}
+	.arrow {
+		&:before, &:after {
+			background: @white-color;
+		}
+	}
+}
+
+a { 
+	color: @white-extra-color;
+}
+
+th {
+	color: @white-color;
+}
+
+td {
+	color: @white-color;
+}
+
+input,
+textarea,
+button {
+	color: @white-color;
+	&:focus {
+		color: @white-color;
+	}
+}
+
+button {
+	color: @white-color;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+	color: @white-color;
+}
+
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { 
+	color: @white-color;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+	color: @white-color;
+}
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {  
+	color: @white-color;
+}
+
+.header {
+	.top-menu {
+		ul {
+			li {
+				a {
+					color: @white-color;
+					background: @dark-bg2-color;
+					&:before {
+						background: -moz-radial-gradient(right, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+						background: -webkit-radial-gradient(right, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+						background: radial-gradient(ellipse at right, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+					}
+					.icon {
+						color: @white-color;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1023px) {
+		.top-menu {
+			box-shadow: 0 0 25px rgba(0,0,0,0.1);
+			ul {
+				li {
+					a {
+						&:before {
+							background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+							background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+							background: radial-gradient(ellipse at top, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.card-started {
+	&:before {
+		box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+	}
+	&:after {
+		background: @dark-bg2-color;
+		opacity: 0.3;
+	}
+	.profile {
+		background: @dark-bg2-color;
+		.slide {
+			&:before, &:after {
+				background: @dark-bg2-color;
+			}
+		}
+		.image {
+			img {
+				border-color: @dark-bg2-color;
+			}
+		}
+		.title {
+			color: @white-color;
+		}
+		.social {
+			a {
+				.ion, .fab, .fas {
+					color: @white-extra-color;
+				}
+			}
+		}
+	}
+}
+
+.card-inner {
+	background: @dark-bg2-color;
+	&:before, &:after {
+		background: @dark-bg2-color;
+	}
+}
+
+.content {
+	.title {
+		color: @white-color;
+		&:after {
+			background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+			background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+			background: radial-gradient(ellipse at left, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		}
+	}
+}
+
+.info-list {
+	ul {
+		li {
+			strong {
+				color: @white-color;
+			}
+		}
+	}
+}
+
+.service-items {
+	&.border-line-v {
+		&:after {
+			background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+			background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+			background: radial-gradient(ellipse at top, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+		}
+	}
+	.service-item {
+		.name {
+			color: @white-color;
+		}
+	}
+	@media (max-width: 560px) {
+		.col {
+			&:after {
+				background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+				background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+				background: radial-gradient(ellipse at left, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+			}
+		}
+	}
+}
+
+.pricing-items {
+	.pricing-item {
+		.name {
+			color: @white-color;
+		}
+		.amount {
+			.number {
+				color: @white-color;
+			}
+			.dollar, .period {
+				color: @white-color;
+			}
+			.period {
+				color: @white-extra-color;
+			}
+		}
+		.feature-list {
+			ul {
+				li {
+					color: @white-color;
+					strong {
+						color: @white-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fuct-items {
+	.fuct-item {
+		.name {
+			color: @white-color;
+		}
+	}
+}
+
+.resume-title, .skill-title {
+	.icon {
+		background: transparent;
+	}
+	.name {
+		color: @white-color;
+	}
+}
+
+.resume-items {
+	.resume-item {
+		.name {
+			color: @white-color;
+		}
+	}
+}
+
+.skills-list {
+	ul {
+		li {
+			.name {
+				color: @white-color;
+			}
+			.progress {
+				background: #3e4148;
+			}
+		}
+	}
+}
+
+.content.works {
+	.filter-menu {
+		.f_btn {
+			color: @white-color;
+		}
+	}
+	.grid-items {
+		&.border-line-v {
+			&:after {
+				background: -moz-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+				background: -webkit-radial-gradient(top, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+				background: radial-gradient(ellipse at top, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+			}
+		}
+	}
+}
+
+.box-item {
+	.desc {
+		.name {
+			color: @white-color;
+		}
+	}
+}
+
+.mfp-wrap.popup-box-inline .mfp-close {
+	color: @white-color;
+}
+
+.mfp-wrap.popup-box-inline {
+	background: @dark-bg2-color;
+}
+
+.post-box {
+	.blog-detail {
+		color: @white-extra-color;
+	}
+	.blog-content {
+		blockquote {
+			color: @white-extra-color;
+			border-left: none;
+		}
+		ul.list-style {
+			li {
+				color: @white-color;
+			}
+		}
+	}
+	.post-comments {
+		li {
+			&:before {
+				background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%, rgba(255,255,255,0) 70%);
+				background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+				background: radial-gradient(ellipse at left, rgba(197,202,213,0.1) 0%,rgba(255,255,255,0) 70%);
+			}
+			.comment-info {
+				.name {
+					color: @white-color;
+					a {
+						color: @white-color;
+					}
+					h6 {
+						span {
+							color: @white-extra-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.background.gradient {
+    background: #17171b;
+    background: -webkit-linear-gradient(top left, #17171b 0%, #28282f 100%);
+    background: linear-gradient(to bottom right, #17171b 0%, #28282f 100%);
+}
+
+.bg-bubbles li {
+    background-color: rgba(255, 255, 255, 0.02);
+}
