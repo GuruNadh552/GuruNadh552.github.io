@@ -40,11 +40,11 @@
         $(document).ready(function() {
             setTimeout(textToSpeech("Welcome to My Website"),5000);
             setTimeout(textToSpeech("Kindly Provide your First Name"),10000);
-            SpeechRecog('fname');
+            setTimeout(SpeechRecog('fname'),10000);
             setTimeout(textToSpeech("Kindly Provide your Last Name"),10000);
-            SpeechRecog('lname');
+            setTimeout(SpeechRecog('lname'),10000);
             setTimeout(textToSpeech("Kindly Provide your email"),10000);
-            SpeechRecog('email');
+            setTimeout(SpeechRecog('email'),10000);
             setTimeout(textToSpeech("Form Submitted"),10000);
             alert("Submitted");
         });
