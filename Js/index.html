@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guru</title>
+<style>
+	body{
+    	background-color:#002b70;
+    }
+	#demo{
+    	background-color:white;
+        max-width:500px;
+        margin:auto;
+        text-align:center;
+        padding:20px;
+        font-size:35px;
+        color:#002b70;
+        font-weight:bold;
+        border-radius:10px;
+        box-shadow:10px 10px 10px rgba(255,255,255,0.3);
+    }
+    #demo1{
+        max-width:500px;
+        margin:auto;
+        text-align:center;
+        padding:20px;
+        font-size:30px;
+        color:#fff;
+        font-weight:bold;
+        border-radius:10px;
+    }
+</style>
+<body>
+<p id="demo1"></p>
+<p id="demo">Press Any Key to Get KeyCode</p>
+
+<script>
+  document.body.addEventListener('keyup', function(event) {
+  console.log(event.key);
+  console.log(event.code);
+  document.getElementById('demo').innerHTML=" "+event.which;
+   document.getElementById("demo").style.fontSize = "100px";
+   document.getElementById('demo1').innerHTML="JavaScript key Code For '"+event.key +"' Is : ";
+});
+
+</script>
+
+</body>
+</html>
